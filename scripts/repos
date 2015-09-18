@@ -1,0 +1,3 @@
+#!/bin/bash
+#run to generate repos
+curl https://api.github.com/users/julianweisbord/repos > assets/repos.json

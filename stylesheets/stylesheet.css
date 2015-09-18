@@ -83,6 +83,13 @@ header h2 {
   color: #aaa;
   letter-spacing: -1px;
 }
+#projectInfo{
+
+}
+#date{
+	text-align: right;
+}
+
 
 #container {
   min-height: 595px;
@@ -277,6 +284,7 @@ h6 {
 p {
   margin-bottom: 20px;
   font-weight: 300;
+	margin-left: 1em;
 }
 
 a {
