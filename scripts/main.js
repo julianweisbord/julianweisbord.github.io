@@ -1,4 +1,6 @@
 // run this after commit to update data.json file
+// need to update this from julianweisbord.github.io and then commit a second time
+// $ node ./scripts/main.js
 var fs = require('fs');
 var sys = require('sys')
 var exec = require('child_process').exec;
