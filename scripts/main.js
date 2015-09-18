@@ -4,13 +4,12 @@
 var fs = require('fs');
 var sys = require('sys')
 var exec = require('child_process').exec;
-
 var DATA = 'assets/data.json';
 
 function modify(data, callback) {
   exec("git log | grep Date", function (error, stdout, stderr) {
     console.log(stdout);
-    data["date"] = stdout.replace("Date", "Last Updated");
+    data["date"] = stdout.split("\n")[0].replace("Date", "Last Updated");
     callback();
   });
 };
