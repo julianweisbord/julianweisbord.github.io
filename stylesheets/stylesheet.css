@@ -60,7 +60,7 @@ a {
   color: #d5000d;
 }
 a:hover {
-  color: #c5000c;
+  color: #aaa;
 }
 
 header {
@@ -83,11 +83,23 @@ header h2 {
   color: #aaa;
   letter-spacing: -1px;
 }
-#projectInfo{
+#gitProjectInfo{
 
+}
+
+.repoGen{
+	margin-left: 1em;
+	font-size: 15px;
+}
+.repoGen a{
+	color: #6d6d6d;
+}
+.repoGen a:hover {
+  color: #d5000d;
 }
 #date{
 	text-align: right;
+	padding-left: 70%
 }
 
 

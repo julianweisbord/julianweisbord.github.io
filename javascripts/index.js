@@ -1,6 +1,6 @@
 window.onload = function () {
   var dateDiv = document.getElementById('date');
-  var projectInfoDiv = document.getElementById('projectInfo');
+  var projectInfoDiv = document.getElementById('gitProjectInfo');
 
   ajax.requestJSON("/assets/data.json", {}, function (data) {
     console.log(data);
@@ -13,11 +13,12 @@ window.onload = function () {
       var newRepo = document.createElement('div');
       var repoLink = document.createElement('a');
       newRepo.className = "repoGen";
-      // style repoGen
+
       repoLink.innerText = data[i]["name"];
       repoLink.href = data[i]["html_url"];
       newRepo.appendChild(repoLink);
       projectInfoDiv.appendChild(newRepo);
+      projectInfoDiv.id = "projectInfoDiv";
     }
   });
 }

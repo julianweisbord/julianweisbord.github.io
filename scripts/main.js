@@ -1,3 +1,4 @@
+// creates the file for a time stamp for each commit.
 // run this after commit to update data.json file
 // need to update this from julianweisbord.github.io and then commit a second time
 // $ node ./scripts/main.js
